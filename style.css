@@ -164,6 +164,49 @@ nav .logo{
     max-width: 200px;
     height: 15 px;
   }
+  body {
+    position: relative;
+  }
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Warna resmi WhatsApp */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    overflow: hidden; /* Menyembunyikan teks secara default */
+  }
+  
+  .whatsapp-button img {
+    width: 40px;
+    height: auto;
+    display: block;
+  }
+
+  .whatsapp-button:hover::after {
+    content: "Reservasi Sekarang";
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    background-color: #25d366; /* Warna resmi WhatsApp */
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    opacity: 0; /* Mulai dari tidak terlihat */
+    transition: opacity 0.3s;
+  }
+  
+  .whatsapp-button:hover::after {
+    opacity: 1; /* Munculkan teks saat hover */
+  }
+  
   
   /* Tambahkan media query untuk layar kecil */
 @media only screen and (max-width: 600px) {
