@@ -169,9 +169,11 @@ nav .logo{
   }
   
   .whatsapp-button {
-    position: fixed;
+    position:fixed;
     bottom: 20px;
-    right: 20px;
+    right: 40px;
+    height: 20px;
+    width: 20px;
     background-color: #25d366; /* Warna resmi WhatsApp */
     border-radius: 50%;
     padding: 10px;
@@ -181,12 +183,6 @@ nav .logo{
     overflow: hidden; /* Menyembunyikan teks secara default */
   }
   
-  .whatsapp-button img {
-    width: 40px;
-    height: auto;
-    display: block;
-  }
-
   .whatsapp-button:hover::after {
     content: "Reservasi Sekarang";
     position: absolute;
